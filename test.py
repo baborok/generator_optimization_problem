@@ -9,9 +9,9 @@ def fuel_consumption(generator_powers):
     # в виде полиномов второго порядка или любых других функций
     # В данном примере использованы произвольные функции
 
-    generator1 = lambda x: 2 * x**2 - 10 * x + 8
-    generator2 = lambda x: 3 * x**2 - 5 * x + 12
-    generator3 = lambda x: 4 * x**2 - 3 * x + 6
+    generator1 = lambda x: 8 + 0.14*x+6.8/10000*x**2
+    generator2 = lambda x: 7.9 + 0.141*x+7/10000*x**2
+    generator3 = lambda x: 8 + 0.139*x+7.9/10000*x**2
 
     consumption1 = generator1(generator_powers[0])
     consumption2 = generator2(generator_powers[1])
